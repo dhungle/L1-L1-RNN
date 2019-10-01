@@ -1,0 +1,38 @@
+# Training hyper-params
+log_path: 'log/fr/16/'
+ckpt_path: 'ckpt/fr/'
+result_path: 'results/fr/'
+D_init_file_path: 'data/dict_dct_256_1024.mat'
+n_iter: 50000
+display_each: 50
+output_each: 500
+save_each: 200
+summary: 50
+lr: 0.0003
+lr_decay_after: 1000
+lr_decay_rate: 1.0
+batch_size: 32
+weight_decay: 0.00
+
+# Network architecture
+model: SISTA
+n_features: 256
+n_hidden: 1024
+scale: 1
+alpha: 1.0
+lambda0: 0.3
+lambda1: 0.2
+lambda2: 0.0
+learn_lambda0: 1
+learn_lambda1: 0
+learn_lambda2: 0
+
+K: 3
+time_steps: 20
+seed: 2017
+compression_factor: 4
+
+# Moving mnist dataset
+moving_mnist_path: 'data/moving_mnist/mnist_test_seq_16.npy'
+width: 16
+height: 16

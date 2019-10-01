@@ -1,0 +1,1 @@
+../anomaly detection/sRNN_TSC_Anomaly_Detection/txt/
